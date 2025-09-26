@@ -10,11 +10,11 @@ const InputRadioField = ({ pickMark, setPickMark }: InputRadioFieldProps) => {
   };
 
   return (
-    <fieldset className="w-82 h-51 flex flex-col items-center justify-around py-4 bg-semi-dark-navy rounded-2xl">
+    <fieldset className="w-pick-area h-51 flex flex-col items-center justify-around py-4 bg-semi-dark-navy rounded-2xl">
       <legend className="sr-only">PICK PLAYER 1'S MARK</legend>
       <span className="text-preset-heading-sxs">PICK PLAYER 1'S MARK</span>
-      <div className="flex items-center justify-center w-70 h-18 bg-dark-navy rounded-[0.625rem]">
-        <label className="w-33 h-13.5 flex items-center justify-center rounded-[0.625rem] has-[:checked]:bg-light-silver hover:bg-[#A8BFC9]/5 hover:cursor-pointer">
+      <div className="flex items-center justify-center w-9/10 px-2 h-18 bg-dark-navy rounded-[0.625rem]">
+        <label className="w-5/10 h-13.5 flex items-center justify-center rounded-[0.625rem] has-[:checked]:bg-light-silver hover:bg-[#A8BFC9]/5 hover:cursor-pointer">
           <input
             type="radio"
             name="mark"
@@ -38,7 +38,7 @@ const InputRadioField = ({ pickMark, setPickMark }: InputRadioFieldProps) => {
           </svg>
         </label>
 
-        <label className="w-33 h-13.5 flex items-center justify-center rounded-[0.625rem] has-[:checked]:bg-light-silver hover:bg-[#A8BFC9]/5 hover:cursor-pointer">
+        <label className="w-5/10 h-13.5 flex items-center justify-center rounded-[0.625rem] has-[:checked]:bg-light-silver hover:bg-[#A8BFC9]/5 hover:cursor-pointer">
           <input
             type="radio"
             name="mark"

@@ -36,3 +36,14 @@
   letter-spacing: 0.0571em;
   font-weight: 500;
 }
+
+@utility w-pick-area {
+  width: clamp(20.5rem, 31vw, 28.75rem);
+}
+@utility w-game-area {
+  width: clamp(6rem, 15vw, 8.75rem);
+}
+@utility size-xo-area {
+  width: clamp(6rem, 15vw, 8.75rem);
+  height: clamp(6rem, 15vw, 8.75rem);
+}

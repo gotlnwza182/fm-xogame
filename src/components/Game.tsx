@@ -183,7 +183,7 @@ const Game = ({ pickMark, setScreen }: GameProps) => {
   return (
     <div className="grid grid-cols-3 justify-around gap-4 relative ">
       <img src="/assets/logo.svg" alt="logo" className="w-18 h-8 mb-16" />
-      <div className="w-24 h-10 flex items-center justify-center gap-2 mb-16 bg-semi-dark-navy rounded-sm text-light-silver">
+      <div className=" h-10 flex items-center justify-center gap-2 mb-16 bg-semi-dark-navy rounded-sm text-light-silver">
         {turn === "xMark" ? (
           <svg
             width="64"
@@ -214,7 +214,7 @@ const Game = ({ pickMark, setScreen }: GameProps) => {
       <button
         type="button"
         onClick={handleShowRestart}
-        className="w-10 h-10 mb-16 rounded-sm flex items-center justify-center place-self-end bg-light-silver inset-shadow-[0_-4px_0_0_rgba(107,137,151,1)] hover:brightness-110 hover:cursor-pointer"
+        className="w-10 h-10 md:w-13 md:h-13 mb-16 rounded-sm flex items-center justify-center place-self-end bg-light-silver inset-shadow-[0_-4px_0_0_rgba(107,137,151,1)] hover:brightness-110 hover:cursor-pointer"
       >
         <img src="/assets/icon-restart.svg" alt="reset icon" />
       </button>
@@ -227,7 +227,7 @@ const Game = ({ pickMark, setScreen }: GameProps) => {
           type="button"
           disabled={cell !== "" || gameOver || turn !== pickMark}
           onClick={() => handleCellClick(i)}
-          className="w-24 h-24 bg-semi-dark-navy rounded-[0.625rem] flex flex-col items-center justify-center hover:[&>img]:block hover:cursor-pointer"
+          className="size-xo-area bg-semi-dark-navy rounded-[0.625rem] flex flex-col items-center justify-center hover:[&>img]:block hover:cursor-pointer"
         >
           {cell === "" ? (
             turn === "xMark" ? (
@@ -261,15 +261,15 @@ const Game = ({ pickMark, setScreen }: GameProps) => {
       ))}
 
       {/* Footer: score */}
-      <div className="w-24 h-16 bg-light-blue rounded-[0.625rem] mt-4 flex flex-col items-center justify-center">
+      <div className=" h-16 bg-light-blue rounded-[0.625rem] mt-4 flex flex-col items-center justify-center">
         <span>X {pickMark === "xMark" ? "(YOU)" : "(CPU)"}</span>
         <span className="text-preset-heading-sxs">{score.xMark}</span>
       </div>
-      <div className="w-24 h-16 bg-light-silver rounded-[0.625rem] my-4 flex flex-col items-center justify-center">
+      <div className=" h-16 bg-light-silver rounded-[0.625rem] my-4 flex flex-col items-center justify-center">
         <span>TIES</span>
         <span className="text-preset-heading-sxs">{score.ties}</span>
       </div>
-      <div className="w-24 h-16 bg-light-yellow rounded-[0.625rem] my-4 flex flex-col items-center justify-center">
+      <div className="h-16 bg-light-yellow rounded-[0.625rem] my-4 flex flex-col items-center justify-center">
         <span>O {pickMark === "oMark" ? "(YOU)" : "(CPU)"}</span>
         <span className="text-preset-heading-sxs">{score.oMark}</span>
       </div>
