@@ -38,7 +38,7 @@
 }
 
 @utility w-pick-area {
-  width: clamp(20.5rem, 31vw, 28.75rem);
+  width: clamp(20.5rem, 50vw, 28.75rem);
 }
 @utility w-game-area {
   width: clamp(6rem, 15vw, 8.75rem);
