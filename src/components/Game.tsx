@@ -183,7 +183,7 @@ const Game = ({ pickMark, setScreen }: GameProps) => {
   return (
     <div className="grid grid-cols-3 justify-around gap-4 relative ">
       <img src="/assets/logo.svg" alt="logo" className="w-18 h-8 mb-16" />
-      <div className=" h-10 flex items-center justify-center gap-2 mb-16 bg-semi-dark-navy rounded-sm text-light-silver">
+      <div className=" h-10 flex items-center justify-center gap-2 mb-16 bg-semi-dark-navy rounded-sm text-light-silver inset-shadow-[0_-4px_0_0_rgba(16,33,42,1)]">
         {turn === "xMark" ? (
           <svg
             width="64"
@@ -227,7 +227,7 @@ const Game = ({ pickMark, setScreen }: GameProps) => {
           type="button"
           disabled={cell !== "" || gameOver || turn !== pickMark}
           onClick={() => handleCellClick(i)}
-          className="size-xo-area bg-semi-dark-navy rounded-[0.625rem] flex flex-col items-center justify-center hover:[&>img]:block hover:cursor-pointer"
+          className="size-xo-area bg-semi-dark-navy rounded-[0.625rem] flex flex-col items-center justify-center hover:[&>img]:block hover:cursor-pointer inset-shadow-[0_-8px_0_0_rgba(16,33,42,1)]"
         >
           {cell === "" ? (
             turn === "xMark" ? (
