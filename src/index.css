@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --font-outfit: "Outfit", sans-serif;
+
+  --color-light-blue: #31c3bd;
+  --color-light-blue-hover: #65e9e4;
+  --color-light-yellow: #f2b137;
+  --color-light-yellow-hover: #ffc860;
+  --color-light-silver: #a8bfc9;
+  --color-light-silver-hover: #dbe8ed;
+  --color-dark-navy: #1a2a33;
+  --color-semi-dark-navy: #1f3641;
+}
+
+@utility text-preset-base {
+  font-family: var(--font-outfit);
+  font-weight: 700;
+}
+
+@utility text-preset-heading-lm {
+  @apply text-preset-base;
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  letter-spacing: 0.0625em;
+}
+@utility text-preset-heading-sxs {
+  @apply text-preset-base;
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  letter-spacing: 0.0625em;
+}
+@utility text-preset-body {
+  @apply text-preset-base;
+  font-size: 0.875rem;
+  letter-spacing: 0.0571em;
+  font-weight: 500;
+}
